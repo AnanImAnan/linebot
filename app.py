@@ -62,7 +62,7 @@ def handle_message(event):
     _low_token = _token[0].lower()
     
     # query THU courses
-    x = 0
+    
     to = event.source.user_id
     if '開始' in _token[0]:
       x = 0
