@@ -70,7 +70,7 @@ def handle_message(event):
     x = 1
     if '開始' in _token[0]:
         for index in range(len(zzz)):
-            _message = TextSendMessage(text=zzz)
+            _message = TextSendMessage(text=(zzz))
             line_bot_api.reply_message(event.reply_token, _message)
       
   
