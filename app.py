@@ -63,7 +63,7 @@ def handle_message(event):
     
 
     # query THU courses
-    to = 'event.source.user_id'
+    to = event.source.user_id
     if '開始' in _token[0]:
       line_bot_api.push_message(to, TextSendMessage(text="回過神來，你身在一個陌生的環境\n眼前有一位長的很像充氣娃娃的女性"))
       _message = TextSendMessage(text="女神：「你好，我是女神智慧娃娃」\n你：「我是哪？這裡是誰？」\n女神：「原來如此，失憶了啊。」")
