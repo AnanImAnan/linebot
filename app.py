@@ -61,13 +61,18 @@ def handle_message(event):
     _token = msg.strip().split(" ")
     _low_token = _token[0].lower()
     
+   # _message = TextSendMessage(text="回過神來，你身在一個陌生的環境\n眼前有一位長的很像充氣娃娃的女性")
+     # line_bot_api.reply_message(event.reply_token, _message)
+     # _message = TextSendMessage(text="女神：「你好，我是女神智慧娃娃」\n你：「我是哪？這裡是誰？」\n女神：「原來如此，失憶了啊。」")
+      #line_bot_api.reply_message(event.reply_token, _message)
     # query THU courses
+    zzz = ['回過神來，你身在一個陌生的環境\n眼前有一位長的很像充氣娃娃的女性', '女神：「你好，我是女神智慧娃娃」\n你：「我是哪？這裡是誰？」\n女神：「原來如此，失憶了啊。」']
     x = 1
     if '開始' in _token[0]:
-      _message = TextSendMessage(text="回過神來，你身在一個陌生的環境\n眼前有一位長的很像充氣娃娃的女性")
-      line_bot_api.reply_message(event.reply_token, _message)
-      _message = TextSendMessage(text="女神：「你好，我是女神智慧娃娃」\n你：「我是哪？這裡是誰？」\n女神：「原來如此，失憶了啊。」")
-      line_bot_api.reply_message(event.reply_token, _message)
+        for index in range(len(zzz)):
+            _message = TextSendMessage(text=zzz)
+            line_bot_api.reply_message(event.reply_token, _message)
+      
   
  
 
