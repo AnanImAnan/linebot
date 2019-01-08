@@ -68,7 +68,7 @@ def handle_message(event):
         x = 0
         line_bot_api.push_message(to, TextSendMessage(text="回過神來，你身在一個陌生的環境\n眼前有一位長的很像充氣娃娃的女性"))
         line_bot_api.push_message(to, TextSendMessage(text="女神：「你好，我是女神智慧娃娃」\n你：「我是哪？這裡是誰？」\n女神：「原來如此，失憶了啊。」\n(請輸入繼續)")
-    if '繼續' in _token[0]:
+    elif '繼續' in _token[0]:
         if x = 0
            x=1
            line_bot_api.push_message(to, TextSendMessage(text="好吧，我說明一下\n你是一位人見人愛的慣老闆\n某天\n由於你平常oo行經所累積的業障實在太多\n導致你在回家的路上\n經過海浪法師的經舍時\n聽到不小心漏音漏出來的佛經\n\n頓時\n\n剎那間\n\n須臾之間\n\n你\n\n被業力引爆\n了"))
